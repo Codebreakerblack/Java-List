@@ -30,4 +30,8 @@ public class ManagerWeekDays {
         return days.size();
     }
 
+    public boolean deleteDay(String days) {
+        return this.days.remove(days);
+    }
+
 }   
