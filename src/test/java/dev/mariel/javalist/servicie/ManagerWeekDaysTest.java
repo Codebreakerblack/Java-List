@@ -16,4 +16,13 @@ public class ManagerWeekDaysTest {
 
     }
 
+    @Test
+    void testgetDays() {
+
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        assertThat(managerWeekDays.getDays().get(1), is("Martes"));
+
+    }
+
 }

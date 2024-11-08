@@ -7,6 +7,10 @@ public class ManagerWeekDays {
 
     public List<String>days;
 
+    public List<String> getDays() {
+        return days;
+    }
+
     public ManagerWeekDays(){
         createList();
     }
