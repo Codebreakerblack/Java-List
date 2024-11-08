@@ -2,6 +2,7 @@ package dev.mariel.javalist.servicie;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -17,7 +18,7 @@ public class ManagerWeekDaysTest {
     }
 
     @Test
-    void testgetDays() {
+    void testGetDays() {
 
         ManagerWeekDays managerWeekDays = new ManagerWeekDays();
 
@@ -39,6 +40,15 @@ public class ManagerWeekDaysTest {
 
         assertTrue(managerWeekDays.deleteDay("Domingo"));
         assertThat(managerWeekDays.getLong(), is(6));   
+    }
+
+    @Test
+    void testExtractDay() {
+
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        assertEquals("Jueves", managerWeekDays.extractDay(3));
+        
     }
 
 }

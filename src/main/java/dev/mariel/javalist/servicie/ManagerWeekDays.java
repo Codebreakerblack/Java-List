@@ -34,4 +34,11 @@ public class ManagerWeekDays {
         return this.days.remove(days);
     }
 
+    public String extractDay(int indice) {
+        if (indice >= 0 && indice < days.size()) {
+            return days.get(indice);   
+        }
+        return null;
+    }
+
 }   
