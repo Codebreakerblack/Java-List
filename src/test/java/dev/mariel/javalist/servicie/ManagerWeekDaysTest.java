@@ -5,6 +5,8 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 public class ManagerWeekDaysTest {
@@ -59,4 +61,13 @@ public class ManagerWeekDaysTest {
         assertTrue(managerWeekDays.existsDay("Viernes"));
     }
 
+    @Test
+    public void testSortList() {
+
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        List<String> sortedDays = managerWeekDays.getDays();
+
+        assertEquals("Sabado", sortedDays.get(5));
+    }
 }

@@ -45,4 +45,8 @@ public class ManagerWeekDays {
         return this.days.contains(days);
     }
 
+    public void sortList() {
+        days.sort(String::compareToIgnoreCase);
+    }
+
 }   
