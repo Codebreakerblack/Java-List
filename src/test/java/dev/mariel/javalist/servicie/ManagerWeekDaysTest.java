@@ -25,4 +25,13 @@ public class ManagerWeekDaysTest {
 
     }
 
+	@Test
+	void testGetLong() {
+		
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        assertThat(managerWeekDays.getLong(), is(7));
+
+	}
+
 }

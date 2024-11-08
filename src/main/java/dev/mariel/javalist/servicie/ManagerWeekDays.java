@@ -7,10 +7,6 @@ public class ManagerWeekDays {
 
     public List<String>days;
 
-    public List<String> getDays() {
-        return days;
-    }
-
     public ManagerWeekDays(){
         createList();
     }
@@ -24,6 +20,14 @@ public class ManagerWeekDays {
         days.add("Viernes");
         days.add("Sabado");
         days.add("Domingo");
+    }
+    
+    public List<String> getDays() {
+        return new ArrayList<>(days);
+    }
+
+    public int getLong(){
+        return days.size();
     }
 
 }   
