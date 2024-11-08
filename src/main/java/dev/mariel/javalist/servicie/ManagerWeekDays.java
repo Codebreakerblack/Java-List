@@ -49,4 +49,8 @@ public class ManagerWeekDays {
         days.sort(String::compareToIgnoreCase);
     }
 
+    public void emptyrList() {
+        days.clear();
+    }
+
 }   

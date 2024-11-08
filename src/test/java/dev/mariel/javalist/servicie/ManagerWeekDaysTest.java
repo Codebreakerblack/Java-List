@@ -70,4 +70,14 @@ public class ManagerWeekDaysTest {
 
         assertEquals("Sabado", sortedDays.get(5));
     }
+
+    @Test
+    public void testEmptyrList() {
+
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        managerWeekDays.emptyrList();
+
+        assertEquals(0, managerWeekDays.getLong());
+    }
 }
