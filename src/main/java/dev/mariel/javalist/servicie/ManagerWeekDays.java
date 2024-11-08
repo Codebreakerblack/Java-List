@@ -41,4 +41,8 @@ public class ManagerWeekDays {
         return null;
     }
 
+    public boolean existsDay (String days) {
+        return this.days.contains(days);
+    }
+
 }   

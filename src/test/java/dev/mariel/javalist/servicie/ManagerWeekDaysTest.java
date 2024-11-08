@@ -51,4 +51,12 @@ public class ManagerWeekDaysTest {
         
     }
 
+    @Test
+    void testExistsDay() {
+
+        ManagerWeekDays managerWeekDays = new ManagerWeekDays();
+
+        assertTrue(managerWeekDays.existsDay("Viernes"));
+    }
+
 }
